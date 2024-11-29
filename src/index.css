@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.outerBox {
+  padding: 20px;
+  margin: 20px;
+  height: 70vh;
+  flex: 1;
+  max-width: 400px;
+  box-shadow: 3px 3px 3px gray;
+  border-radius: 15px;
+  background-color: rgb(209, 209, 209);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  column-gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+.form  button {
+  background-color: red;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+.form input {
+  outline: red;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.form label {
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.taskList {
+  width: fit-content;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  justify-content: start;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.task > p {
+  font-size: larger;
+  font-weight: bolder;
+  color: blue;
+}
+
+.task > button {
+  background-color: red;
+  cursor: pointer;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-weight: bolder;
+}
+
+.taskList::-webkit-scrollbar{
+  display: none;
+}
